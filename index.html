@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>店铺后台</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sollup.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.simple.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header></header>
+		<div class="topserch_box">
+    		<div class="main">
+				<ul class="topserch">
+					<li class="fl">
+						<img src="img/LOGO.png"/>
+					</li>
+					<li class="shop_name fl">
+						旭旭宝宝的商家工作台
+					</li>
+					<li style="clear: both;"></li>
+				</ul>
+			</div>
+    	</div>
+    	<div class="main" id="survey">
+    		<h5>您当前的位置： 卖家中心＞概况</h5>
+    		<ul id="accordion" class="accordion">
+			<li class="open">
+				<div class="link maincolor">
+					<img class="imgtip" src="img/icon_General.png"/>
+					概况
+				</div>
+			</li>
+			<li>
+				<div class="link">
+					<img class="imgtip" src="img/icon_set.png"/>
+					店铺设置
+					<img class="plus" src="img/icon_plus.png"/>
+					<img class="jian" src="img/icon_jian.png"/>
+				</div>
+				<ul class="submenu">
+					<li>
+						<a href="#">●&emsp;店铺信息</a>
+					</li>
+					<li>
+						<a href="#">●&emsp;店铺模块</a>
+					</li>
+					<li>
+						<a href="#">●&emsp;商家秀</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="link">
+					<img class="imgtip" src="img/icon_recommended.png"/>
+					推荐分类
+					<img class="plus" src="img/icon_plus.png"/>
+					<img class="jian" src="img/icon_jian.png"/>
+				</div>
+				<ul class="submenu" style="display: none;">
+					<li>
+						<a href="#">●&emsp;购买分类</a>
+					</li>
+					<li>
+						<a href="#">●&emsp;已购买分类</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<div class="link">
+					<img class="imgtip" src="img/icon_finance.png"/>
+					财务中心
+					<img class="plus" src="img/icon_plus.png"/>
+					<img class="jian" src="img/icon_jian.png"/>
+				</div>
+				<ul class="submenu" style="display: none;">
+					<li>
+						<a href="#">●&emsp;我要提现</a>
+					</li>
+					<li>
+						<a href="#">●&emsp;提现设置</a>
+					</li>
+					<li>
+						<a href="#">●&emsp;提现明细</a>
+					</li>
+					<li>
+						<a href="#">●&emsp;收益明细</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		
+		<div class="fr">
+			<ul class="survey-rt">
+				<li>
+					当日成交总额
+					<p>￥1555.00</p>
+					<span class="down">31.5% <img src="img/icon_down.png" alt="" /></span>
+				</li>
+				<li>
+					当日总收益
+					<p>￥1500.00</p>
+					<span class="up">30.00% <img src="img/icon_up2.png" alt="" /></span>
+				</li>
+				<li>
+					当前可提现金额
+					<p>￥11111.00</p>
+				</li>
+				<ol style="clear: both;"></ol>
+			</ul>
+			
+			<div class="survey-rc">
+				<h4>近期交易</h4>
+				<table class="table table-striped">
+				  <tr>
+				  	<th>商品类目</th>
+				  	<th>当日成交总额</th>
+				  	<th>当日总收益</th>
+				  	<th>7天成交总额</th>
+				  	<th>7天总收益</th>
+				  	<th>30天成交总额</th>
+				  	<th>30天总收益</th>
+				  </tr>
+				  <tr>
+				  	<td>游戏币</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  </tr>
+				  <tr>
+				  	<td>游戏币</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  	<td>25128.00</td>
+				  </tr>
+				</table>
+			</div>
+			
+			<div id="survey-rd"></div>
+		</div>
+		<ol style="clear: both;"></ol>
+    	</div>
+    	<footer></footer>
+	</body>
+	<script type="text/javascript">
+		 var myChart = echarts.init(document.getElementById('survey-rd'));
+		option = {
+	    xAxis: {
+	        type: 'category',
+	        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+	    },
+	    yAxis: {
+	        type: 'value'
+	    },
+	    series: [{
+	        data: [820, 932, 901, 934, 1290, 1330, 1320],
+	        type: 'line'
+	    }]
+	};
+	
+	 myChart.setOption(option);
+	</script>
+</html>
