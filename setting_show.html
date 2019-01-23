@@ -10,6 +10,21 @@
 		<script src="js/comm.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/echarts.simple.min.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.table-striped>tbody>tr:nth-of-type(2n){
+				background: #f9f9f9;
+			} 
+			.table-striped>tbody>tr:nth-of-type(odd) {
+				background: white;
+			}
+			.table>tbody>tr>th{
+				border-top: none;
+			}
+			.table>thead>tr>th{
+				border-bottom: none;
+			}
+			
+		</style>
 	</head>
 	<body>
 		<header></header>
@@ -94,8 +109,41 @@
 			</li>
 		</ul>
 		
-		<div class="fr info-rc">
+		<div class="fr info-rc show-rc">
 			<p>轮播图</p>
+			<table class="table table-striped">
+				<thead>
+					<tr>
+					<th>序号</th>
+					<th>缩略图</th>
+					<th>（上传图片大小要求：1920*400 格式：jpg）</th>
+				</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td class="lunbo-num">1</td>
+						<td class="lunbo-img"><img src="img/shop/imges_default.png"/></td>
+						<td class="lunbo-set">
+							<input type="file" class="noshobt" />
+							<button class="uptlogo">上传图片</button>
+							<img src="img/shop/icon_Trash.png"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="lunbo-num">1</td>
+						<td class="lunbo-img"><img src="img/shop/imges_default.png"/></td>
+						<td class="lunbo-set">
+							<input type="file" class="noshobt"/>
+							<button class="uptlogo">上传图片</button>
+							<img src="img/shop/icon_Trash.png"/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="plustr">
+				<img src="img/shop/icon_plus.png"/>
+			</div>
 		</div>
 		<ol style="clear: both;"></ol>
     	</div>

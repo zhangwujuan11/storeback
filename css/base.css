@@ -314,7 +314,7 @@ h1 a {
 	border: 1px solid #54A347;
 	outline: none;
 	color: #54A347;
-	background: transparent;
+	background: white;
 	margin-bottom:10px;
 }
 .info-rc  h5{
@@ -347,3 +347,48 @@ h1 a {
 	float: left;
 }
 .info-btn{margin-left:7%;}
+/*商家秀*/
+.show-rc>p{
+	font-size: 16px;
+	color: #333;
+}
+.show-rc tbody tr{
+	height: 100px;
+}
+.show-rc th{
+	font-size: 14px;
+	color: #999;
+	font-weight: normal;
+}
+.show-rc .lunbo-img img{
+	width: 336px;
+	height: 70px;
+}
+.show-rc .lunbo-img{
+	padding-top: 14px;
+}
+.show-rc table th,.show-rc table td{
+	text-align: center;
+}
+
+.show-rc .lunbo-num{
+	line-height: 77px;
+}
+.show-rc .lunbo-set{
+	padding-top: 30px;
+}
+.noshobt{
+	width: 82px;
+	height: 32px;
+	background: red;
+	position: absolute;
+	margin-left: 131px;
+	opacity: 0;
+}
+#plustr{
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	border: 1px dashed #E5E5E5;
+}
