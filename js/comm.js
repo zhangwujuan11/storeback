@@ -4,9 +4,7 @@ $(document).ready(function () {
         $('footer').load('footer.html');
         
         var bhei= $("body").height();
-        console.log(bhei)
        if(bhei>=855){
-       	console.log(121212212121)
        	$("body,html").css("height","auto");
        	$("footer").css("bottom","-150px");
        }else{

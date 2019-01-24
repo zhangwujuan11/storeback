@@ -110,7 +110,7 @@
 				<p>开户姓名：张三</p>
 				<p>开户行：&nbsp;<input type="text" placeholder="请输入开户行"/></p>
 				<p>手机号码：15261111111</p>
-				<p>验证码&emsp;&nbsp;<input type="" name="ercode" id="ercode" value="" /></p>
+				<p>验证码&emsp;&nbsp;<input type="" name="ercode" id="ercode" value="" /><input id="btn" type="button" onclick="sendemail()" value="获取验证码"></p>
 				<button class="main-btn">立即提现</button>
 			</div>
 		</div>
@@ -162,4 +162,28 @@
     	</div>
     	<footer style="bottom: -150px !important;"></footer>
 	</body>
+	<script type="text/javascript">
+		var countdown=60; 
+		function sendemail(){
+		    var obj = $("#btn");
+		    settime(obj);
+		    
+		    }
+		function settime(obj) {
+		    if (countdown == 0) { 
+		        obj.attr('disabled',false); 
+		        //obj.removeattr("disabled"); 
+		        obj.val("获取验证码");
+		        countdown = 3; 
+		        return;
+		    } else { 
+		        obj.attr('disabled',true);
+		        obj.val("重新发送(" + countdown + ")");
+		        countdown--; 
+		    } 
+		setTimeout(function() { 
+		    settime(obj) }
+		    ,1000) 
+		}
+	</script>
 </html>
