@@ -1,8 +1,8 @@
 body,html{
 	width: 100%;
 	margin: 0;
-	height: 100%;
 	background: #EFF3F5;
+	position: relative;
 }
 ul,li{
 	list-style: none;
@@ -13,10 +13,7 @@ a,a:link,a:visited,a:hover,a:active{
 	text-decoration: none;
 	color:#999;
 }
-footer{
-	position: absolute;
-	bottom: 0px;
-}
+
 
 .fl{
 	float: left;
@@ -99,6 +96,8 @@ footer{
 	color: white;
 	padding-top:50px;
 	margin-top: 15px;
+	clear: both; /* 清除浮动元素格式 */
+  position:absolute;
 }
 footer span{
 	font-size: 12px;
