@@ -4,7 +4,9 @@ $(document).ready(function () {
         $('footer').load('footer.html');
         
         var bhei= $("body").height();
-       if(bhei>=950){
+        console.log(bhei)
+       if(bhei>=855){
+       	console.log(121212212121)
        	$("body,html").css("height","auto");
        	$("footer").css("bottom","-150px");
        }else{
@@ -61,6 +63,10 @@ $(document).ready(function () {
    			$("body,html").css("height","100%");
        		$("footer").css("bottom","0");
    		}
+   	 })
+   	 
+   	 $(document).on("click",".trash",function  () {
+   	 	$(this).parent().parent("tr").remove()
    	 })
    	
 	

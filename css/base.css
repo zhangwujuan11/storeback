@@ -88,7 +88,7 @@ header #loginout{
 }
 /*页脚*/
 footer{
-	background: #6E6760;
+	background: #444851;
 	width: 100%;
 	height: 150px;
 	font-size: 16px;
@@ -390,4 +390,141 @@ h1 a {
 	line-height: 100px;
 	text-align: center;
 	border: 1px dashed #E5E5E5;
+}
+/*我要提现*/
+.cash-rc,.set-rc{
+	width: 960px;
+	background: white;
+	padding: 30px 20px;
+	height: 560px;
+}
+.cash-rc select,.cash-rc p input{
+	width: 300px;
+	height: 36px;
+	margin-left: 10px;
+}
+.grcolor{
+	color: #54A347;
+}
+.recolor{
+	color: #FF5565;
+}
+.cash-rc .fw,.set-rc .fw{
+	width: 550px;
+	margin-left: calc(50% - 275px);
+}
+.cash-rc p,.set-rc p{
+	margin: 20px 0;
+}
+.cash-rc p span{
+	margin-left: 10px;
+}
+.set-rc{
+	height: 420px;
+}
+.set-rc select,.set-rc p input{
+	width: 300px;
+	height: 36px;
+	margin-left: 10px;
+}
+.set-rcd{
+	width: 960px;
+	background: white;
+	padding: 30px 20px;
+	margin-top: 15px;
+}
+.set-rcd th,.set-rcd td{
+	text-indent: 5px;
+}
+.set-rcd .edit{
+	margin-right: 10px;
+}
+.deta-rc{
+	width: 960px;
+	background: white;
+	padding: 30px 20px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #308AF3;
+    cursor: default;
+    background-color: #fff;
+   /* border-bottom: 2px solid #FF8800;*/
+    border-top: 0px;
+    border-left: 0px;
+    }
+li.active{
+	border-bottom: 2px solid #308AF3;
+}
+    
+.nav-tabs>li>a:hover{
+	background: white;
+}
+.nav-tabs>li>a{
+    padding:0;
+    text-align: center;
+    border-right: 1px solid #D8D8D8;
+    border-radius: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    color: #666666;
+}
+.nav-tabs>li{
+    width: 78px;
+    padding: 10px 0;
+}
+#myTabContent>div{
+	padding: 15px 0;
+}
+#myTabContent input{
+	height:30px;
+	background:rgba(255,255,255,1);
+	border:1px solid rgba(229,229,229,1);
+	border-radius:2px;
+	text-indent: 10px;
+}
+#myTabContent .serb{
+	width: 410px;
+}
+#myTabContent .sers{
+	width: 158px;
+}
+.sers-btn{
+	width:70px;
+	height: 30px;
+	border: 1px solid #54A347;
+	border-radius: 2px;
+	color: #54A347;
+	background: none;
+	outline: none;
+}
+#myTabContent table{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	border-top: 1px solid #e5e5e5;
+}
+
+#myTabContent table th{
+	text-align: center;
+	padding: 10px 0;
+	color: #999999;
+	font-weight: normal;
+	font-size:14px;
+}
+/*
+#myTabContent table thead{
+	background: #308AF3;
+	margin-bottom: 20px;
+}*/
+#myTabContent .fr{
+	width: 60%;
+	text-align: right;
+}
+.shoti p{
+	width:95px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
