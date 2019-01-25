@@ -66,6 +66,19 @@ $(document).ready(function () {
    	 $(document).on("click",".trash",function  () {
    	 	$(this).parent().parent("tr").remove()
    	 })
+   	 
+   	 //推荐分类
+	$(".mmend-rc h4").click(function  () {
+		$("#iconup")
+		if (!$("#recheckbox").is(':visible')){
+			$("#recheckbox").slideDown()
+			$("#iconup").css("transform","rotate(180deg)")
+		}else{
+			$("#recheckbox").slideUp()
+			$("#iconup").css("transform","rotate(0deg)")
+		}
+		
+	})
    	
 	
 });

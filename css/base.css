@@ -439,7 +439,7 @@ h1 a {
 .set-rcd .edit{
 	margin-right: 10px;
 }
-.deta-rc{
+.deta-rc,.pr-rc,.mmend-rc{
 	width: 960px;
 	background: white;
 	padding: 30px 20px;
@@ -537,4 +537,118 @@ li.active{
 	border: none;
 	outline: none;
 	margin-left: -109px;
+}
+
+/*收益明细*/
+#yue,#tixian{
+	width: 450px;
+	height: 80px;
+	color: white;
+	padding-left: 30px;
+	line-height: 80px;
+	font-size: 16px;
+}
+#yue{
+	background: url(../img/cash/background1.png) no-repeat;
+	background-size: 100% 100%;
+}
+#tixian{
+	background: url(../img/cash/background2.png) no-repeat;
+	float: right;
+	background-size: 100% 100%;
+}
+.pr-rc{
+	background: transparent;
+	padding: 0;
+}
+.prtca{
+	font-size: 24px;
+	border-left: 1px dashed white;
+	padding-left: 15px;
+	margin-left: 15px;
+}
+#tixian a{
+	color: white;
+	text-decoration: underline;
+	float: right;
+	margin-right: 30px;
+}
+.pro-rcd p input{
+	height: 30px;
+	text-indent: 10px;
+}
+#ddh{
+	width: 440px;
+	height: 30px;
+	float: left;
+	text-indent: 10px;
+}
+#protable{
+	border-top: 1px solid #e5e5e5;
+}
+#protable th{
+	color:#999;
+	font-size: 14px;
+}
+/*推荐分类*/
+.mmend-rc{
+	min-height: 500px;
+}
+.mmend-rc #iconup{
+	width: auto;
+	margin-top: 20px;
+}
+.mmend-rc h4{
+	height: 106px;
+	background: #FCFFEB;
+	padding: 19px 27px;
+	font-size: 16px;
+	color: #333;
+	
+}
+.mmend-rc  p{
+	float: left;
+	margin:6px 14px;
+	line-height: 30px;
+}
+.mmendimg{
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+.mmend-rc .mmedtip{
+	margin-top: 8px;
+	font-size: 14px;
+	color: #999;
+}
+#recheckbox li{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 20px;
+}
+#recheckbox li:nth-of-type(even){
+	background: #F8F8F8;
+}
+#recheckbox li label{
+	width: 100%;
+	font-size: 14px;
+	color: #333;
+	font-weight: normal;
+}
+#recheckbox li input{
+	float: right;
+	zoom:165%;
+	margin-top: 10px;
+}
+#recheckbox{
+	display: none;
+}
+.deg{
+	transform:rotate(7deg);
+	-ms-transform:rotate(7deg); 
+	-moz-transform:rotate(7deg); 
+	-webkit-transform:rotate(7deg); 
+	-o-transform:rotate(7deg); 
 }
