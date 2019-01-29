@@ -21,7 +21,7 @@ $(function() {
 		};
 	}
 	var accordion = new Accordion($('#accordion'), false);
-	$(".link").click(function  () {
+	$("#accordion .link").click(function  () {
 		var bi=$(this).find(".plus");
 		if(bi.is(':hidden')){
 			$(this).find(".jian").hide();
@@ -34,5 +34,20 @@ $(function() {
 			$(this).parent().siblings().find(".jian").hide();
 			$(this).parent().siblings().find(".plus").show()
 		}
-	})
+	});
+	var hash = window.location.hash;
+	if (hash) {
+		var path = hash.substr(1).split('-');
+		var pNode = $("#accordion");
+		for(var i=0; i < path.length - 1; i++) {
+			var $li = $("li:eq(" + path[i] + ")", pNode);
+			$li.addClass("open");
+			$(".link", $li).find(".jian").show();
+			$(".link", $li).find(".plus").hide();
+			$(".link", $li).parent().siblings().find(".jian").hide();
+			$(".link", $li).parent().siblings().find(".plus").show()
+			pNode = $(".submenu", $li);
+			pNode.css("display", "block");
+		}
+	}
 });
