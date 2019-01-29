@@ -40,13 +40,13 @@ $(function() {
 		var path = hash.substr(1).split('-');
 		var pNode = $("#accordion");
 		for(var i=0; i < path.length - 1; i++) {
-			var $li = $("li:eq(" + path[i] + ")", pNode);
+			var $li = $(">li:eq(" + path[i] + ")", pNode);
 			$li.addClass("open");
-			$(".link", $li).find(".jian").show();
-			$(".link", $li).find(".plus").hide();
-			$(".link", $li).parent().siblings().find(".jian").hide();
-			$(".link", $li).parent().siblings().find(".plus").show()
-			pNode = $(".submenu", $li);
+			$(">.link", $li).find(".jian").show();
+			$(">.link", $li).find(".plus").hide();
+			$(">.link", $li).parent().siblings().find(".jian").hide();
+			$(">.link", $li).parent().siblings().find(".plus").show()
+			pNode = $(">.submenu", $li);
 			pNode.css("display", "block");
 		}
 	}
