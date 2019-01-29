@@ -621,29 +621,29 @@ li.active{
 	font-size: 14px;
 	color: #999;
 }
-#recheckbox li{
+.recheckbox li{
 	width: 100%;
 	height: 50px;
 	line-height: 50px;
 	border-bottom: 1px solid #e5e5e5;
 	padding: 0 20px;
 }
-#recheckbox li:nth-of-type(even){
+.recheckbox li:nth-of-type(even){
 	background: #F8F8F8;
 }
-#recheckbox li label{
+.recheckbox li label{
 	width: 100%;
 	font-size: 14px;
 	color: #333;
 	font-weight: normal;
 }
-#recheckbox li input{
+.recheckbox li input{
 	float: right;
 	zoom:165%;
 	margin-top: 10px;
 }
-#recheckbox{
-	display: none;
+.recheckbox{
+	display: block;
 }
 .deg{
 	transform:rotate(7deg);

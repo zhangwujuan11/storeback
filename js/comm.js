@@ -69,13 +69,13 @@ $(document).ready(function () {
    	 
    	 //推荐分类
 	$(".mmend-rc h4").click(function  () {
-		$("#iconup")
-		if (!$("#recheckbox").is(':visible')){
-			$("#recheckbox").slideDown()
-			$("#iconup").css("transform","rotate(180deg)")
-		}else{
-			$("#recheckbox").slideUp()
+		
+		if (!$(".recheckbox").is(':visible')){
+			$(".recheckbox").slideDown()
 			$("#iconup").css("transform","rotate(0deg)")
+		}else{
+			$(".recheckbox").slideUp()
+			$("#iconup").css("transform","rotate(180deg)")
 		}
 		
 	})
