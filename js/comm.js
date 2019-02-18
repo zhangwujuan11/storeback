@@ -21,10 +21,10 @@ $(document).ready(function () {
    	
    	//商家秀
    	$("#plustr").on("click",function  () {
-   		var txt='<tr><td class="lunbo-num"></td><td class="lunbo-img"><img src="img/shop/imges_default.png"/></td><td class="lunbo-set"><input type="file" class="noshobt"/><button class="uptlogo">上传图片</button><img style="margin-left:3px;" src="img/shop/icon_Trash.png"/></td></tr>'
-   		$(".show-rc table tbody").append(txt);
+   		var $tr = $($("#lunbo-img-template").text());
+   		$(".show-rc table tbody").append($tr);
    		var nn=$(".table-striped tbody tr").length;
-   		$(".table-striped tbody tr:last").find(".lunbo-num").html(nn);
+   		$tr.find(".lunbo-num").html(nn);
    		if(nn >= 6){
    			$("#plustr").hide();
    		}else{
