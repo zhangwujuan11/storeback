@@ -4,6 +4,7 @@ body,html{
 	background: #EFF3F5;
 	min-height: 100% !important;
 	position: absolute;
+	overflow-x: hidden;
 }
 ul,li{
 	list-style: none;
