@@ -2,16 +2,7 @@ $(document).ready(function () {
 	//头尾公共提取
         $('header').load('top.html');
         $('footer').load('footer.html');
-        
-        var bhei= $("body").height();
-       if(bhei>=855){
-       	$("body,html").css("height","auto");
-       	$("footer").css("bottom","-150px");
-       }else{
-       	$("body,html").css("height","100%");
-       		$("footer").css("bottom","0");
-       }
-        
+                
    	//店铺信息
    	$("#uplog").change(function(){
    		var newway=$(this).val();
